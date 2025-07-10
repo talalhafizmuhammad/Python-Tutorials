@@ -22,7 +22,7 @@
 <p align="center">Master coding with files, OOP, GUI, and more — step-by-step tutorials that grow with you!</p>
 <p align="center">
   <img src="https://img.shields.io/badge/Level-Beginner%20to%20Advanced-blue?style=flat-square">
-  <img src="https://img.shields.io/badge/Includes-Numpy%20%26%20Pandas-lightgrey?style=flat-square">
+  <img src="https://img.shields.io/badge/Includes-Everything%20%required-lightgrey?style=flat-square">
   <img src="https://img.shields.io/badge/Format-Code%20%2B%20Concepts-orange?style=flat-square">
 </p>
 
