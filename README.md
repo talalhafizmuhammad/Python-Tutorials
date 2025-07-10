@@ -6,19 +6,25 @@
   <img src="https://readme-typing-svg.herokuapp.com/?lines=Beginner+to+Advanced+Python+Lessons;Master+File+Handling,+OOP,+and+GUI;Practice+with+Real+Code+Examples&center=true&width=500&height=45">
 </p>
 
-[![Python](https://img.shields.io/badge/language-Python-blue?logo=python&logoColor=white)](https://www.python.org/)
-![Library](https://img.shields.io/badge/library-NumPy-grey?logo=numpy)
-![Library](https://img.shields.io/badge/library-Pandas-lightblue?logo=pandas)
-![Stars](https://img.shields.io/badge/stars-%E2%AD%90%E2%AD%90%E2%AD%90%E2%AD%90%E2%AD%90-yellow)
-[![Made by](https://img.shields.io/badge/Made%20by-Hafiz%20M%20Talal-orange)](https://github.com/HafizMTalal)
-
+<p align="center">
+  <a href="https://www.python.org/"><img src="https://img.shields.io/badge/language-Python-blue?logo=python&logoColor=white"></a>
+  <img src="https://img.shields.io/badge/library-NumPy-grey?logo=numpy">
+  <img src="https://img.shields.io/badge/library-Pandas-lightblue?logo=pandas">
+  <img src="https://img.shields.io/badge/stars-%E2%AD%90%E2%AD%90%E2%AD%90%E2%AD%90%E2%AD%90-yellow">
+  <a href="https://github.com/HafizMTalal"><img src="https://img.shields.io/badge/Made%20by-Hafiz%20M%20Talal-orange"></a>
+</p>
 
 ---
 
-```text
+<p align="center">
+  
+<pre>
 ██████╗ ██╗   ██╗██████╗ ██╗████████╗ ██████╗ ███╗   ██╗
 ██╔══██╗██║   ██║██╔══██╗██║╚══██╔══╝██╔═══██╗████╗  ██║
 ██████╔╝██║   ██║██████╔╝██║   ██║   ██║   ██║██╔██╗ ██║
 ██╔═══╝ ██║   ██║██╔═══╝ ██║   ██║   ██║   ██║██║╚██╗██║
 ██║     ╚██████╔╝██║     ██║   ██║   ╚██████╔╝██║ ╚████║
 ╚═╝      ╚═════╝ ╚═╝     ╚═╝   ╚═╝    ╚═════╝ ╚═╝  ╚═══╝
+</pre>
+
+</p>
