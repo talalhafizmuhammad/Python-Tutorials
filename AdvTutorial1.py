@@ -50,4 +50,46 @@ for f in files:
         print(f"{f} is a C++ file")
 
 os.remove("C:/Users/User/Downloads/Rolls.pdf")
-    '''
+    
+    
+import os
+
+cwd = os.getcwd()
+print(cwd)  #.getcwd()->getcurrentworkingdirectory
+
+lstdir = os.listdir() #List files in directory
+print(lstdir)
+
+Create the new Directory
+newDir = os.path.join(cwd, 'MyDir')
+if not os.path.exists(newDir):
+    os.mkdir(newDir)
+    print(newDir)
+else:
+    print(f"Directory already exists")
+
+check if a file exist
+
+Path = os.path.join(cwd, "main.cpp")
+if os.path.exists(Path):
+    print(f"file exists")
+else:
+    print(f"file donot exists")
+
+
+CMD Commands
+os.system('cls')
+print("jernfernfjkernfjnfejkrnerjknekjvne")
+
+files = os.listdir(cwd)
+for f in files:
+    if f.endswith('.py'):
+        print(f"{f} is a python file")
+
+.remove()
+
+os.remove('C:/Users/User/Desktop/PythonAdvance/main.cpp')
+
+os.remove('C:/Users/User/Desktop/PythonAdvance/folder')  #error to delete the directory/folder
+
+'''
