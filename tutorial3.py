@@ -1,84 +1,117 @@
-'''tuples are immutable 
-Tuple = (1, 2, 'Hello', 5.5, 1)
-Tuple = ([0], [1], [2], [3], [4]....) positive
-Tuple= (....[-5], [-4], [-3], [-2], [-1])
+"""
+Topic: Tuples, Dictionaries, and Looping in Python
+Description: Demonstrates usage of immutable tuples, dictionary operations, and loops with conditionals.
+"""
 
+# -------------------------------
+# Tuples: Immutable collections
+# -------------------------------
+
+# Tuple with different data types
+Tuple = (1, 2, 'Hello', 5.5, 1)
+
+# Tuple with nested lists (positive indexing)
+Tuple = ([0], [1], [2], [3], [4])
+
+# Print the type of Tuple
 print(type(Tuple))
 
-accessing elements
+# Accessing tuple elements
 print(Tuple[1])
 print(Tuple[-1])
 print(Tuple[-3])
 
-Tuple[0] = 10
-print(Tuple)
-print(Tuple.count(2))
-print(Tuple.index(5.5))
+# Uncommenting the below line would raise an error because tuples are immutable
+# Tuple[0] = 10  # ❌ Not allowed
 
-dictionaries
+# Tuple methods
+Tuple = (1, 2, 'Hello', 5.5, 1)
+print(Tuple.count(2))      # Count of value 2
+print(Tuple.index(5.5))    # Index of value 5.5
 
+# -------------------------------
+# Dictionaries: Key-value mapping
+# -------------------------------
 
-dict1 = {'name' : 'Talal', 'age' : 18, 'Occ' : 'Std'}
+dict1 = {
+    'name': 'Talal',
+    'age': 18,
+    'Occ': 'Std'
+}
 
+# Accessing values
 value = dict1['age']
-print(f'age: {value}')
-print(f'Age: {dict1['age']}')
+print(f'Age: {value}')
+print(f"Age (again): {dict1['age']}")
 
+# Adding new key-value pair
 dict1['Occupation'] = 'Student'
-
 print(dict1)
 
-dict1['name'] = 'ali'
+# Updating existing value
+dict1['name'] = 'Ali'
 print(dict1)
 
-dict2 = dict1.pop('age')
+# Removing a key-value pair and saving its value
+removed_value = dict1.pop('age')
 print(dict1)
-print(dict2)
+print(removed_value)
 
-dict2 = dict1.keys()
-print(f'Keys: {dict2}')
+# Accessing keys, values, and items
+print(f"Keys: {dict1.keys()}")
+print(f"Values: {dict1.values()}")
+print(f"Items: {dict1.items()}")
 
+# Membership check
+print(f"Does 'name' exist? {'name' in dict1}")
+print(f"Does 'city' exist? {'city' in dict1}")
 
+# Check for a specific key
 if 'class' in dict1:
-    print(f"Name is: {dict1['name']}")
+    print(f"Class is: {dict1['class']}")
 
-dict2 = dict1.values()
-print(dict2)
+# -------------------------------
+# Loops with lists and conditions
+# -------------------------------
 
-dict2 = dict1.items()
-print(dict2)
-
-print(f"Does name exist? {'name' in dict1}")
-print(f"Does city exist? {'city' in dict1}")
-
+# Searching an item in a list
 List = ['apples', 'bananas', 'pears']
-
 target_item = 'guavas'
 
-for i in List:
-    if i == target_item:
+for item in List:
+    if item == target_item:
         print('Exist')
-    else:
-        print('not')
+        break
+else:
+    print('Not Exist')
 
+# Counting items greater than a certain value
 numbers = [1, 5, 10, 15, 20, 25]
-
 count_greater_than_10 = 0
 
-for i in numbers:
-    if i > 10:
+for num in numbers:
+    if num > 10:
         count_greater_than_10 += 1
+
 print(count_greater_than_10)
+
+# Using enumerate to access index and value
 for index, item in enumerate(numbers):
     if index == 2:
-        print(f"item at index {index}: {item}")
+        print(f"Item at index {index}: {item}")
 
-dict1 = {'Math' : 90, 'Eng' : 76, 'Sci' : 85}
+# -------------------------------
+# Looping through a dictionary
+# -------------------------------
 
-for subject, grade in dict1.items():
+grades = {
+    'Math': 90,
+    'Eng': 76,
+    'Sci': 85
+}
+
+for subject, grade in grades.items():
     if grade >= 85:
-        print(f"Subject {subject} has grade of {grade} (A)")
+        print(f"Subject {subject} has a grade of {grade} (A)")
     else:
-        print(f"Subject {subject} has grade of {grade} (satisfactory)")
-
-'''
+        print(f"Subject {subject} has a grade of {grade} (satisfactory)")
