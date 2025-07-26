@@ -1,61 +1,63 @@
-'''Exception Handling
-Exception: Errors that occurs during the program execution, without handling them the program would crash 
+"""
+Topic: Exception Handling in Python
+Description: Demonstrates how to handle runtime errors like ValueError and ZeroDivisionError,
+             and how to raise custom exceptions using raise.
+"""
 
-Exception Handling:
-    try:
-    except:
+# Example of a crashed program (no exception handling)
+# num = int(input("Enter a number: "))
+# print(f"Num's half is {num / 2}")
 
-crashed program
-num = int(input("Enter a number: "))
-print(f"Num's half is {num/2}")
-
+# Safer version with try-except
 try:
     num = int(input("Enter a number: "))
-    print(f"Half of num is {num/2}")
+    print(f"Half of num is {num / 2}")
 except:
-    print("Something went wrong, please enter a valid number")
-    
-ValueError, ZeroDivisionError
+    print("Something went wrong, please enter a valid number.")
 
+# Handling multiple specific exceptions
 try:
     a = int(input("Enter first number: "))
     b = int(input("Enter second number: "))
     print(f"Result = {a / b}")
 except ZeroDivisionError:
-    print("You can not divide by zero")
+    print("You cannot divide by zero.")
 except ValueError:
-    print("Please enter only numbers")
-    
-age = int(input())
+    print("Please enter only numeric values.")
 
-if age < 0:
-    raise ValueError("Age can't be negative")
-else:
-    print(f"Valid age: {age}")
+# Raising custom exception for age
+try:
+    age = int(input("Enter your age: "))
+    if age < 0:
+        raise ValueError("Age can't be negative.")
+    else:
+        print(f"Valid age: {age}")
+except ValueError as e:
+    print("Error:", e)
 
-height = float(input('Enter: '))
-if height < 0:
-    raise ValueError("Height should be greater than 0")
-else:
-    print("Your height: ", height)
+# Raising custom exception for height
+try:
+    height = float(input("Enter your height in cm: "))
+    if height < 0:
+        raise ValueError("Height must be a positive number.")
+    else:
+        print("Your height:", height)
+except ValueError as e:
+    print("Error:", e)
 
--> Take a num1 and divide by num2, handle both ValueError and ZeroDivisionError
-
-
+# Take num1 and divide by num2, handle both errors
 try:
     num1 = int(input("Enter a number (Dividend): "))
     num2 = int(input("Enter a number (Divisor): "))
-    print("value is", num1/num2)
+    print("Result:", num1 / num2)
 except ValueError:
-    print('You entered an irrelevant datatype')
+    print("Invalid input! Please enter numbers only.")
 except ZeroDivisionError:
-    print("Cannot divide by zero")
+    print("Cannot divide by zero!")
 
--> Ask for someone's name and raise error if let blank
-
-name = (input("Enter your name: "))
-if name == '':
-    raise ValueError("Name cannot be empty")
+# Ask name and raise error if left blank
+name = input("Enter your name: ")
+if name.strip() == '':
+    raise ValueError("Name cannot be empty.")
 else:
     print(f"Your name is {name}")
-'''
